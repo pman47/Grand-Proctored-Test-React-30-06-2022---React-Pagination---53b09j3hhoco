@@ -31,7 +31,9 @@ const PostList = () => {
   return (
     <>
       {data == null ? (
-        <div id="loader">loading</div>
+        <div id="loader" className="loader">
+          loading
+        </div>
       ) : (
         data.map((ele) => {
           return <Post ele={ele} key={ele.id} />;
